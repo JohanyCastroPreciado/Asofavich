@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="shortcut icon" href="img/neworld.png" type="image/x-icon">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .encuesta {
+            margin: 50px;
+        }
+        .pregunta {
+            margin-bottom: 20px;
+        }
+        .respuesta {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        h1{
+            text-align: center;
+            color: brown;
+        }
+        h2{
+            color: blue;
+        }
+        h3{
+            color: rgb(29, 142, 29);
+        }
+        h4{
+            color: grey;
+        }
+        body{
+            background-color: #f9f1d1 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="encuesta">
+        <h1>CARACTERIZACION DE VICTIMAS</h1><br>
+        <h2>1. DATOS DEL ENTREVISTADO JEFE DE HOGAR</h2>
+        <div class="pregunta">
+            <h3>Pregunta 1: Fecha de caracterización</h3>
+            <div class="respuesta">
+                <input type="date" id="fecha_caract" name="pregunta1" required><br/>
+            </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 2: Nombres y Apellidos completos</h3>
+            <div class="respuesta">
+                <input type="text" id="nombres_apellidos" name="pregunta2" placeholder="Nombres y apellidos completos" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 3: Tipo de documento</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta3" value="CC">
+                <label for="opcion1">CC</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta3" value="TI">
+                <label for="opcion2">TI</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta3" value="RC">
+                <label for="opcion3">RC</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta3" value="PP">
+                <label for="opcion4">PP</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 4: Documento</h3>
+            <div class="respuesta">
+                <input type="text" id="documento" name="pregunta4" placeholder="Documento" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 5: Departamento</h3>
+            <div class="respuesta">
+                <input type="text" id="departamento" name="pregunta5" placeholder="Departamento" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 6: Municipio</h3>
+            <div class="respuesta">
+                <input type="text" id="municipio" name="pregunta6" placeholder="Municipio" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 7: Zona</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta7" value="Urbana">
+                <label for="opcion1">Urbana</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta7" value="Rural">
+                <label for="opcion2">Rural</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 8: Dirección</h3>
+            <div class="respuesta">
+                <input type="text" id="direccion" name="pregunta8" placeholder="Dirección" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 9: Teléfono</h3>
+            <div class="respuesta">
+                <input type="text" id="teléfono" name="pregunta9" placeholder="Teléfono" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 10: Fecha de victimización</h3>
+            <div class="respuesta">
+                <input type="date" id="fecha_victimi" name="pregunta10" required><br/>
+            </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 11: RUV</h3>
+            <div class="respuesta">
+                <input type="text" id="ruv" name="pregunta11" placeholder="RUV" required><br/>
+            </div>
+        </div><br>
+        <h2>2. FAMILIA</h2>
+        <div class="pregunta">
+            <h3>Pregunta 1: Tipo de documento</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta1" value="CC">
+                <label for="opcion1">CC</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta1" value="TI">
+                <label for="opcion2">TI</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta1" value="RC">
+                <label for="opcion3">RC</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta1" value="PP">
+                <label for="opcion4">PP</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 2: Documento</h3>
+            <div class="respuesta">
+                <input type="text" id="documento" name="pregunta2" placeholder="Documento" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 3: Nombres y Apellidos completos</h3>
+            <div class="respuesta">
+                <input type="text" id="nombres_apellidos" name="pregunta3" placeholder="Nombres y apellidos completos" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 4: Fecha de nacimiento</h3>
+            <div class="respuesta">
+                <input type="date" id="fecha_naci" name="pregunta4" required><br/>
+            </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 5: Género</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta5" value="Masculino">
+                <label for="opcion1">Masculino</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta5" value="Femenino">
+                <label for="opcion2">Femenino</label>
+            </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 6: Parentesco</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta6" value="Soltero o jefe de hogar">
+                <label for="opcion1">Soltero o jefe de hogar</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta6" value="Conyuge o compañero">
+                <label for="opcion2">Cónyuge o compañero</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta6" value="Hijos/hijastros">
+                <label for="opcion3">Hijos/hijastros</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta6" value="Padre/madre">
+                <label for="opcion4">Padre/madre</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta6" value="Hermanos">
+                <label for="opcion5">Hermanos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta6" value="Suegros">
+                <label for="opcion6">Suegros</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta6" value="Otros parientes">
+                <label for="opcion7">Otros parientes</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta6" value="Otros no parientes">
+                <label for="opcion8">Otros no parientes</label>
+            </div>
+        </div><br>   
+        <div class="pregunta">
+            <h3>Pregunta 7: Estado civil</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta7" value="Soltero(a)">
+                <label for="opcion1">Soltero(a)</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta7" value="Casado(a)">
+                <label for="opcion2">Casado(a)</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta7" value="Union libre">
+                <label for="opcion3">Unión libre</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta7" value="Separado(a) o divorciado(a)">
+                <label for="opcion4">Separado(a) o divorciado(a)</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta7" value="Viudo(a)">
+                <label for="opcion5">Viudo(a)</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 8: Enfoque diferencial</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta8" value="Afrocolombiano">
+                <label for="opcion1">Afrocolombiano</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta8" value="Gitano">
+                <label for="opcion2">Gitano</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta8" value="Indigena">
+                <label for="opcion3">Indígena</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta8" value="Mestizo">
+                <label for="opcion4">Mestizo</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta8" value="LGTBI">
+                <label for="opcion5">LGTBI</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta8" value="Raizal">
+                <label for="opcion6">Raizal</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta8" value="Otro">
+                <label for="opcion7">Otro</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta8" value="Ninguno">
+                <label for="opcion8">Ninguno</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 9: Estuvo casado</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta9" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta9" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 10: Discapacitada</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta10" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta10" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 11: Víctima de mina antipersona</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta11" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta11" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 12: Afiliado a salud</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta12" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta12" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 13: Recibió atención salud mental</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta13" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta13" value="No">
+                <label for="opcion2">No</label>
+            </div>
+            <div class="respuesta">
+                <input type="text" id="Cual" name="pregunta13" placeholder="Cual" required>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 14: Recibió aproyo Psicosocial</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta14" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta14" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 15: Asistió a programas de salud reproductiva</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta15" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta15" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 16: Vacunas</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta16" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta16" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 17: Enfermedades que padece</h3>
+            <div class="respuesta">
+                <input type="text" id="documento" name="pregunta17" placeholder="Enfermedades que padece" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 18: Califique el estado de salud (1-5)</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta18" value="Uno">
+                <label for="opcion1">Uno</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta18" value="Dos">
+                <label for="opcion2">Dos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta18" value="Tres">
+                <label for="opcion3">Tres</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta18" value="Cuatro">
+                <label for="opcion4">Cuatro</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta18" value="Cinco">
+                <label for="opcion5">Cinco</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 19: Sabe leer y escribir</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta19" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta19" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 20: Nivel alcanzado de estudio</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta20" value="Ninguno">
+                <label for="opcion1">Ninguno</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta20" value="Preescolar">
+                <label for="opcion2">Preescolar</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta20" value="Primaria">
+                <label for="opcion3">Primaria</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta20" value="Secundaria">
+                <label for="opcion4">Secundaria</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta20" value="Técnico">
+                <label for="opcion5">Técnico</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta20" value="Tecnólogo">
+                <label for="opcion6">Tecnólogo</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta20" value="Universitario">
+                <label for="opcion7">Universitario</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta20" value="Postgrado">
+                <label for="opcion8">Postgrado</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 21: Competencia laboral actual</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta21" value="Agrícola">
+                <label for="opcion1">Agrícola</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta21" value="Agropecuaria">
+                <label for="opcion2">Agropecuaria, silvicultura, caza, pesca</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta21" value="Minería">
+                <label for="opcion3">Minería</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta21" value="Industria">
+                <label for="opcion4">Industria</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta21" value="Comercio">
+                <label for="opcion5">Comercio</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta21" value="Servicio">
+                <label for="opcion6">Servicio</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta21" value="Construcción">
+                <label for="opcion7">Construcción</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta21" value="Manufactura">
+                <label for="opcion8">Manufactura</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion9" name="pregunta21" value="Transporte">
+                <label for="opcion9">Transporte</label>
+            </div>
+                <div class="respuesta">
+                <input type="radio" id="opcion10" name="pregunta21" value="Otras">
+                <label for="opcion10">Otras</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion11" name="pregunta21" value="Ns/Nr">
+                <label for="opcion11">Ns/Nr</label>
+            </div>
+        </div><br> 
+        <div class="pregunta">
+            <h3>Pregunta 22: Competencia certificada</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta22" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta22" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 23: Le gustaria capacitarse</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta23" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta23" value="No">
+                <label for="opcion2">No</label>
+            </div>
+            <div class="respuesta">
+                <input type="text" id="Enque" name="pregunta23" placeholder="En que" required>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 24: En que horario</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta24" value="Mañana">
+                <label for="opcion1">Mañana</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta24" value="Tarde">
+                <label for="opcion2">Tarde</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta24" value="Noche">
+                <label for="opcion3">Noche</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 25: Estado laboral actual</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta25" value="Empleado">
+                <label for="opcion1">Empleado</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta25" value="Desempleado">
+                <label for="opcion2">Desempleado</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta25" value="Estudiante">
+                <label for="opcion3">Estudiante</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta25" value="Oficios del hogar">
+                <label for="opcion4">Oficios del hogar</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta25" value="Rentista">
+                <label for="opcion5">Rentista</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta25" value="Pensionado">
+                <label for="opcion6">Pensionado</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta25" value="Otro">
+                <label for="opcion7">Otro</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 26: Contrato laboral escrito</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta26" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta26" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 27: Trabajo en jornada</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta27" value="Legal">
+                <label for="opcion1">Legal</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta27" value="No Legal">
+                <label for="opcion2">No Legal</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta27" value="Ns/Nr">
+                <label for="opcion2">Ns/Nr</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 28: Aporta Seguridad a riesgos profesionales</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta28" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta28" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <h2>3. VICTIMIZACION</h2>
+        <div class="pregunta">
+            <h3>Pregunta 1: Durante los últimos años, cuantas veces ha sido victimizado</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta1" value="1.Año, Municipio, Dpto">
+                <label for="opcion1">1. Año</label>
+                <input type="text" id="año1" name="pregunta1" placeholder="Año,Municipio, Dpto" required><br/>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta1" value="2.Año">
+                <label for="opcion2">2. Año</label>
+                <input type="text" id="año2" name="pregunta1" placeholder="Año, Municipio, Dpto" required><br/>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta1" value="3.Año">
+                <label for="opcion3">3. Año</label>
+                <input type="text" id="año3" name="pregunta1" placeholder="Año, Municipio, Dpto" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 2: A cuales causas atribuye la victimización</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta2" value="Atentado">
+                <label for="opcion1">Atentado terrorista/Combates/Enfrentamientos/Hostigamientos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta2" value="Amenaza">
+                <label for="opcion2">Amenaza</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta2" value="DelitosLibertad">
+                <label for="opcion3">Delitos contra la libertad y la integridad sexual en desarrollo del conflicto armado</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta2" value="Desaparición forzada">
+                <label for="opcion4">Desaparición forzada</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta2" value="Desplazamiento forzoso">
+                <label for="opcion5">Desplazamiento forzoso</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta2" value="Homicidio">
+                <label for="opcion6">Homicidio</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta2" value="Masacre">
+                <label for="opcion7">Masacre</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta2" value="Mina antipersonal">
+                <label for="opcion8">Mina antipersonal, munición sin explotar, artefacto explosivo improvisado</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion9" name="pregunta2" value="Secuestro">
+                <label for="opcion9">Secuestro</label>
+            </div>
+                <div class="respuesta">
+                <input type="radio" id="opcion10" name="pregunta2" value="Tortura">
+                <label for="opcion10">Tortura</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion11" name="pregunta2" value="Vinculacion de niños">
+                <label for="opcion11">Vinculación de niños, niñas y adolescentes a actividades relacionadas con grupos armados</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion11" name="pregunta2" value="Despojo">
+                <label for="opcion11">Despojo y abandono de tierras</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 3: Número de personas que conforman su hogar en el momento del desplazamiento</h3>
+            <div class="respuesta">
+                <input type="text" id="numero-personas" name="pregunta3" placeholder="Número-personas" required><br/>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 4: La familia en el momento de la victimización están vivos</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta4" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta4" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 5: Algún familiar ha sido detenido de forma arbitraria</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta5" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta5" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 6: Algún familiar fue víctima de violación o prostitución forzada</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta6" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta6" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 7: Algún familiar fue asesinado por denunciar a grupos armados al margen de la ley</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta7" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta7" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 8: Algún familiar fue reclutado por grupos armados al margen de la ley</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta8" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta8" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 9: Algún familiar ha sido víctima de secuestro</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta9" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta9" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 10: Algún familiar ha instaurado demandas por la victimización</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta10" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta10" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 11: Algún familiar fue víctima de mina antipersona</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta11" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta11" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 12: Algún familiar fue víctima de retención por parte del estado</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta12" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta12" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 13: En el momento de la victimización su núcleo familiar declaro ante:</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta13" value="Acción social">
+                <label for="opcion1">Acción social</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta13" value="Personería">
+                <label for="opcion2">Personería</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta13" value="Procuraduría">
+                <label for="opcion3">Procuraduría</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta13" value="Unidad de atención de víctimas">
+                <label for="opcion4">Unidad de atención de víctimas</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta13" value="Otros">
+                <label for="opcion5">Otros</label>
+            </div>
+        </div><br>
+        <h2>4. VIVIENDA</h2>
+        <div class="pregunta">
+            <h3>Pregunta 1: Actualmente la vivienda en la que habita es</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta1" value="Refugio natural">
+                <label for="opcion1">Refugio natural</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta1" value="Albergue">
+                <label for="opcion2">Albergue</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta1" value="Rancho">
+                <label for="opcion3">Rancho</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta1" value="Pieza">
+                <label for="opcion4">Pieza</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta1" value="Apartamento">
+                <label for="opcion5">Apartamento</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta1" value="Casa">
+                <label for="opcion6">Casa</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta1" value="Finca">
+                <label for="opcion7">Finca</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta1" value="Otro">
+                <label for="opcion8">Otro</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 2: Modalidad de tenencia</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta2" value="Propia">
+                <label for="opcion1">Propia</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta2" value="Arriendo">
+                <label for="opcion2">Arriendo</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta2" value="De un amigo">
+                <label for="opcion3">De un amigo</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta2" value="Albergue temporal">
+                <label for="opcion4">Albergue temporal</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta2" value="En usufructo">
+                <label for="opcion5">En usufructo</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta2" value="Ocupación de hecho">
+                <label for="opcion6">Ocupación de hecho</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta2" value="Invasión">
+                <label for="opcion7">Invasión</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta2" value="Ns/Nr">
+                <label for="opcion8">Ns/Nr</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 3: Tipo de contrato</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta3" value="Escritura registrada">
+                <label for="opcion1">Escritura registrada</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta3" value="Contrato escrito">
+                <label for="opcion2">Contrato escrito</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta3" value="Arreglo verbal">
+                <label for="opcion3">Arreglo verbal</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta3" value="Ninguno">
+                <label for="opcion4">Ninguno</label>
+            </div>
+            <div class="respuesta">
+            <input type="radio" id="opcion5" name="pregunta3" value="Ns/Nr">
+            <label for="opcion8">Ns/Nr</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 4: Zona de vivienda</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta4" value="Urbana">
+                <label for="opcion1">Urbana</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta4" value="Rural">
+                <label for="opcion2">Rural</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 5: Zona de alto riesgo</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta5" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta5" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 6: Techo</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta6" value="Zinc">
+                <label for="opcion1">Zinc</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta6" value="Asbesto/cemento">
+                <label for="opcion2">Asbesto/cemento</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta6" value="Cartón">
+                <label for="opcion3">Cartón</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta6" value="Plástico">
+                <label for="opcion4">Plástico</label>
+            </div>
+            <div class="respuesta">
+            <input type="radio" id="opcion5" name="pregunta6" value="Otro">
+            <label for="opcion5">Otro</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 7: Paredes</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta7" value="Bloque">
+                <label for="opcion1">Bloque</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta7" value="Ladrillo">
+                <label for="opcion2">Ladrillo</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta7" value="Piedra">
+                <label for="opcion3">Piedra</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta7" value="Madera pulida">
+                <label for="opcion4">Madera pulida</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta7" value="Tapia pisada">
+                <label for="opcion5">Tapia pisada</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta7" value="Adobe">
+                <label for="opcion6">Adobe</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta7" value="Cartón, madera">
+                <label for="opcion7">Cartón, madera</label>
+            </div>
+            <div class="respuesta">
+            <input type="radio" id="opcion8" name="pregunta7" value="Otro">
+            <label for="opcion8">Otro</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 8: Piso</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta8" value="Cemento">
+                <label for="opcion1">Cemento</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta8" value="Arena">
+                <label for="opcion2">Arena</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta8" value="Madera">
+                <label for="opcion3">Madera</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta8" value="Baldosa">
+                <label for="opcion4">Baldosa</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta8" value="Otro">
+                <label for="opcion5">Otro</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 9: Acueducto</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta9" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta9" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 10: Servicio telefónico</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta10" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta10" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 11: Servicio de energía</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta11" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta11" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 12: Alcantarillado</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta12" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta12" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 13: Servicio de gas</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta13" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta13" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 14: Recolección de basura</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta14" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta14" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 15: Número de cuartos que tenían para vivir anteriormente</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta15" value="1">
+                <label for="opcion1">1</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta15" value="2">
+                <label for="opcion2">2</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta15" value="3">
+                <label for="opcion3">3</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta15" value="4">
+                <label for="opcion4">4</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta15" value="5">
+                <label for="opcion5">5</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 16: Número de cuartos con que cuenta actualmente</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta16" value="1">
+                <label for="opcion1">1</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta16" value="2">
+                <label for="opcion2">2</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta16" value="3">
+                <label for="opcion3">3</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta16" value="4">
+                <label for="opcion4">4</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta16" value="5">
+                <label for="opcion5">5</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 17: Cuantas familias comparten la casa donde habita el hogar actualmente</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta17" value="1">
+                <label for="opcion1">1</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta17" value="2">
+                <label for="opcion2">2</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta17" value="3">
+                <label for="opcion3">3</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta17" value="4">
+                <label for="opcion4">4</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta17" value="5">
+                <label for="opcion5">5</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 18: Ha recibido mejoramiento de vivienda</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta18" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta18" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <h2>5. ECONOMIA Y ALIMENTACION</h2>
+        <div class="pregunta">
+            <h3>Pregunta 1: Ingresos mensuales de su núcleo</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta1" value="Inferior a un salario mínimo legal">
+                <label for="opcion1">Inferior a un salario mínimo legal</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta1" value="Un salario mínimo legal vigente">
+                <label for="opcion2">Un salario mínimo legal vigente</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta1" value="Entre 1 y 2 salarios mínimos legales">
+                <label for="opcion3">Entre 1 y 2 salarios mínimos legales</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta1" value="Entre 2 y 3 salarios mínimos legales">
+                <label for="opcion4">Entre 2 y 3 salarios mínimos legales</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta1" value="Más de 3 salarios mínimos legales">
+                <label for="opcion5">Más de 3 salarios mínimos legales</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta1" value="No devenga">
+                <label for="opcion6">No devenga</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 2: Gastos mensuales de su núcleo</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta2" value="Inferior a un salario mínimo legal">
+                <label for="opcion1">Inferior a un salario mínimo legal</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta2" value="Más de 1 salario mínimo legal">
+                <label for="opcion2">Más de 1 salario mínimo legal</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta2" value="Entre 1 y 2 salarios mínimos legales">
+                <label for="opcion3">Entre 1 y 2 salarios mínimos legales</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta2" value="Entre 2 y 3 salarios mínimos legales">
+                <label for="opcion4">Entre 2 y 3 salarios mínimos legales</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta2" value="Más de 3 salarios mínimos legales">
+                <label for="opcion5">Más de 3 salarios mínimos legales</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 3: En orden de importancia clasifique en que gasta sus ingresos</h3>
+            <h4>Gasto 1</h4>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta3" value="Transporte">
+                <label for="opcion1">Transporte</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta3" value="Servicios públicos">
+                <label for="opcion2">Servicios públicos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta3" value="Alimentación">
+                <label for="opcion3">Alimentación</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta3" value="Educación">
+                <label for="opcion4">Educación</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta3" value="Vivienda">
+                <label for="opcion5">Vivienda</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta3" value="Salud">
+                <label for="opcion6">Salud</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta3" value="Otro">
+                <label for="opcion7">Otro</label>
+            </div>
+            <h4>Gasto 2</h4>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta3" value="Transporte">
+                <label for="opcion1">Transporte</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta3" value="Servicios públicos">
+                <label for="opcion2">Servicios públicos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta3" value="Alimentación">
+                <label for="opcion3">Alimentación</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta3" value="Educación">
+                <label for="opcion4">Educación</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta3" value="Vivienda">
+                <label for="opcion5">Vivienda</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta3" value="Salud">
+                <label for="opcion6">Salud</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta3" value="Otro">
+                <label for="opcion7">Otro</label>
+            </div>
+            <h4>Gasto 3</h4>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta3" value="Transporte">
+                <label for="opcion1">Transporte</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta3" value="Servicios públicos">
+                <label for="opcion2">Servicios públicos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta3" value="Alimentación">
+                <label for="opcion3">Alimentación</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta3" value="Educación">
+                <label for="opcion4">Educación</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta3" value="Vivienda">
+                <label for="opcion5">Vivienda</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta3" value="Salud">
+                <label for="opcion6">Salud</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta3" value="Otro">
+                <label for="opcion7">Otro</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 4: Cuantas comidas en promedio consumen en el hogar al día</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta4" value="1">
+                <label for="opcion1">1</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta4" value="2">
+                <label for="opcion2">2</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta4" value="3">
+                <label for="opcion3">3</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta4" value="4">
+                <label for="opcion4">4</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta4" value="5">
+                <label for="opcion5">5</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 5: Especifique los alimentos que comúnmente consumen en su hogar a la semana</h3>
+            <h4>Adultos</h4>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta5" value="Carnes">
+                <label for="opcion1">Carnes</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta5" value="Complementos alimenticios">
+                <label for="opcion2">Complementos alimenticios</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta5" value="Granos">
+                <label for="opcion3">Granos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta5" value="Harinas">
+                <label for="opcion4">Harinas</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta5" value="Sopas/caldos/cremas">
+                <label for="opcion5">Sopas/caldos/cremas</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta5" value="Verduras">
+                <label for="opcion6">Verduras</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta5" value="Frutas/jugos naturales">
+                <label for="opcion7">Frutas/jugos naturales</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta5" value="Verduras">
+                <label for="opcion8">Huevos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion9" name="pregunta5" value="Lacteos">
+                <label for="opcion9">Lacteos</label>
+            </div>
+            <h4>Niños</h4>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta5" value="Carnes">
+                <label for="opcion1">Carnes</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta5" value="Complementos alimenticios">
+                <label for="opcion2">Complementos alimenticios</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta5" value="Granos">
+                <label for="opcion3">Granos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta5" value="Harinas">
+                <label for="opcion4">Harinas</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta5" value="Sopas/caldos/cremas">
+                <label for="opcion5">Sopas/caldos/cremas</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta5" value="Verduras">
+                <label for="opcion6">Verduras</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta5" value="Frutas/jugos naturales">
+                <label for="opcion7">Frutas/jugos naturales</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta5" value="Verduras">
+                <label for="opcion8">Huevos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion9" name="pregunta5" value="Lacteos">
+                <label for="opcion9">Lacteos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion10" name="pregunta5" value="Bienestarina">
+                <label for="opcion10">Bienestarina</label>
+            </div>
+            <h4>Menores de 2 años</h4>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta5" value="Carnes">
+                <label for="opcion1">Carnes</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta5" value="Complementos alimenticios">
+                <label for="opcion2">Complementos alimenticio</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta5" value="Granos">
+                <label for="opcion3">Granos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta5" value="Harinas">
+                <label for="opcion4">Harinas</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta5" value="Sopas/caldos/cremas">
+                <label for="opcion5">Sopas/caldos/cremas</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta5" value="Verduras">
+                <label for="opcion6">Verduras</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta5" value="Frutas/jugos naturales">
+                <label for="opcion7">Frutas/jugos naturales</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta5" value="Verduras">
+                <label for="opcion8">Huevos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion9" name="pregunta5" value="Lacteos">
+                <label for="opcion9">Lacteos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion10" name="pregunta5" value="Bienestarina">
+                <label for="opcion10">Bienestarina</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 6: Consideran que la alimentación es acorde a su cultura y costumbre</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta6" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta6" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 7: Consideran que la alimentación es adecuada</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta7" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta7" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 8: La alimentación proviene de</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta8" value="Producen">
+                <label for="opcion1">Producen</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta8" value="Compran">
+                <label for="opcion2">Compran</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta8" value="Ayuda donaciones de entidades">
+                <label for="opcion3">Ayuda donaciones de entidades</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta8" value="Donación de familiares">
+                <label for="opcion4">Donación de familiares</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta8" value="Donación de vecinos o amigos">
+                <label for="opcion5">Donación de vecinos o amigos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta5" value="Otros">
+                <label for="opcion6">Otros</label>
+                <input type="text" id="cual" placeholder="Cual" required>
+            </div>
+        </div><br>
+        <h2>6. PROTECCION</h2>
+        <div class="pregunta">
+            <h3>Pregunta 1: Ha sido amenazado</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta1" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta1" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 2: Ha acudido a alguna entidad para solicitar protección</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta2" value="Ministerio del interior">
+                <label for="opcion1">Ministerio del interior</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta2" value="Defensoría o procuraduría">
+                <label for="opcion2">Defensoría o procuraduría</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta2" value="Organismo internacional de derechos humanos">
+                <label for="opcion3">Organismo internacional de derechos humanos</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta2" value="Fiscalía">
+                <label for="opcion4">Fiscalía</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta2" value="Alcaldía">
+                <label for="opcion5">Alcaldía</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion6" name="pregunta2" value="Personería">
+                <label for="opcion6">Personería</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion7" name="pregunta2" value="Ninguno">
+                <label for="opcio7">Ninguno</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion8" name="pregunta2" value="Otros">
+                <label for="opcion8">Otros</label>
+                <input type="text" id="cual" name="pregunta2" placeholder="Cual" required>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 3: Conoce sobre las ayudas que presta el estado a la población desplazada</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta3" value="Si">
+                <label for="opcion1">Si</label>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta3" value="No">
+                <label for="opcion2">No</label>
+            </div>
+        </div><br>
+        <div class="pregunta">
+            <h3>Pregunta 4: Usted o algún miembro de su hogar están inscritos en programas específicos para</h3>
+            <div class="respuesta">
+                <input type="radio" id="opcion1" name="pregunta4" value="Mujer">
+                <label for="opcion1">Mujer</label>
+                <input type="text" id="Si" name="pregunta4" placeholder="Si" required>
+                <input type="text" id="No" name="pregunta4" placeholder="No" required>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion2" name="pregunta4" value="Hombre">
+                <label for="opcion2">Hombre</label>
+                <input type="text" id="Si" name="pregunta4" placeholder="Si" required>
+                <input type="text" id="No" name="pregunta4" placeholder="No" required>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion3" name="pregunta4" value="Adulto mayor">
+                <label for="opcion3">Adulto mayor</label>
+                <input type="text" id="Si" name="pregunta4" placeholder="Si" required>
+                <input type="text" id="No" name="pregunta4" placeholder="No" required>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion4" name="pregunta4" value="Jóvenes">
+                <label for="opcion4">Jóvenes</label>
+                <input type="text" id="Si" name="pregunta4" placeholder="Si" required>
+                <input type="text" id="No" name="pregunta4" placeholder="No" required>
+            </div>
+            <div class="respuesta">
+                <input type="radio" id="opcion5" name="pregunta4" value="Discapacidad">
+                <label for="opcion5">Discapacidad</label>
+                <input type="text" id="Si" name="pregunta4" placeholder="Si" required>
+                <input type="text" id="No" name="pregunta4" placeholder="No" required>
+            </div>
+        </div><br>
+        <h3>Pregunta 5: Algún miembro está afiliado a alguna organización de población desplazada</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta5" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta5" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <h2>7. AYUDA RECIBIDA</h2>
+    <div class="pregunta">
+        <h3>Pregunta 1: Ha recibido ayuda humanitaria</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta1" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta1" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 2: Los menores que no están al cuidado de un adulto asisten a programas de atención al menor</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta2" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta2" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 3: Ha recibido proyectos productivos</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta3" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta3" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 4: Niños y jóvenes están en el programa de cuidado infantil</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta4" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta4" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 5: Niños y jóvenes asisten a programas de alimentación</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta5" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta5" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 6: Algún miembro está afiliado a alguna organización de población desplazada</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta6" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta6" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 7: Pertenecen a programas red unidos</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta7" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta7" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 8: Los miembros del hogar han padecido hambre o falta de alimento por su desplazamiento</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta8" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta8" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 9: Si estuvieron en retorno contaron con programas de seguridad alimentaria</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta9" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta9" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 10: Los adultos mayores cuentan con programas alimenticios</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta10" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta10" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 11: Los menores están en familias en acción</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta11" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta11" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 12: Los niños del hogar que estudian son beneficiados con desayuno</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta12" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta12" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 13: Los niños del hogar que estudian son beneficiados con almuerzos escolares</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta13" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta13" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 14: En el momento del desplazamiento su núcleo familiar recibió ayudas de</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta14" value="Ministerio del interior">
+            <label for="opcion1">Ministerio del interior</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta14" value="Defensoría o procuraduría">
+            <label for="opcion2">Defensoría o procuraduría</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion3" name="pregunta14" value="Organismo internacional de derechos humanos">
+            <label for="opcion3">Organismo internacional de derechos humanos</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion4" name="pregunta14" value="Fiscalía">
+            <label for="opcion4">Fiscalía</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion5" name="pregunta14" value="Alcaldía">
+            <label for="opcion5">Alcaldía</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion6" name="pregunta14" value="Personería">
+            <label for="opcion6">Personería</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion7" name="pregunta14" value="Ninguno">
+            <label for="opcio7">Ninguno</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion8" name="pregunta14" value="Otro">
+            <label for="opcion8">Otro</label>
+            <input type="text" id="cual" placeholder="Cual" required>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 15: Por parte del municipio en urgencia en</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta15" value="Ninguna">
+            <label for="opcion1">Ninguna</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta15" value="Alojamiento">
+            <label for="opcion2">Alojamiento</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion3" name="pregunta15" value="Ración alimentaria">
+            <label for="opcion3">Ración alimentaria</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion4" name="pregunta15" value="Salud">
+            <label for="opcion4">Salud</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion5" name="pregunta15" value="Agua potable">
+            <label for="opcion5">Agua potable</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion6" name="pregunta15" value="Educación">
+            <label for="opcion6">Educación</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion7" name="pregunta15" value="Otro">
+            <label for="opcion7">Otro</label>
+            <input type="text" id="cual" placeholder="Cual" required>
+        </div>
+    </div><br>
+    <h2>8. DISCAPACIDAD</h2>
+    <div class="pregunta">
+        <h3>Pregunta 1: La discapacidad surgió antes del desplazamiento</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta1" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta1" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 2: La persona discapacitada se siente en igual de condiciones</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta2" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta2" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 3: Que entidad le ha brindado apoyo para su rehabilitación</h3>
+        <div class="respuesta">
+            <input type="text" id="entidad" name="pregunta3" placeholder="Entidad" required>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 4: Le han ofrecido ubicarlo laboralmente de acuerdo a su condición de discapacidad</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta4" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta4" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 5: Ha sido marginado o discriminado por su discapacidad</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta5" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta5" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 6: Ha sido excluido de algún beneficio o ventaja por su discapacidad</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta6" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta6" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 7: Ha recibido rehabilitación y orientación para desarrollo</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta7" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta7" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 8: Las personas con discapacidad mental estas cuentan con algún subsidio</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta8" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta8" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 9: Su familia cuenta con capacidad económica para cubrir los gastos de su rehabilitación</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta9" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta9" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 10: Los menores de 18 años de edad con discapacidad estudian</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta10" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta10" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 11: Ha recibido prórroga automática de ayuda humanitaria de emergencia</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta11" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta11" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 12: Hace parte de alguna organización de desplazados con discapacidad</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta12" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta12" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 13: Se les conoce y se les respeta su participación en OPDS</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta13" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta13" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 14: Ha recibido ayuda humanitaria</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta14" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta14" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <h2>9. PROTECCION ESPECIAL</h2>
+    <div class="pregunta">
+        <h3>Pregunta 1: La ayuda humanitaria corresponde a su cultura</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta1" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta1" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 2: La educación recibida por menores de 18 años es apropiado a su cultura</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta2" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta2" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 3: Las personas en situación de discapacidad se siente en igual de condiciones que los demás</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta3" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta3" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 4: A qué grupo o cabildo indígena pertenece</h3>
+        <div class="respuesta">
+            <input type="text" id="grupo-cabildo" name="pregunta4" placeholder="Grupo-cabildo" required>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 5: Las mujeres indígenas o afrodescendientes sufren violencia intrafamiliar</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta5" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta5" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 6: Ha denunciado:</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta6" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta6" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 7: A cuál entidad</h3>
+        <div class="respuesta">
+            <input type="text" id="nombre entidad" name="pregunta7" placeholder="Nombre Entidad" required>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 8: Que tipo de violencia ha padecido</h3>
+        <div class="respuesta">
+            <input type="text" id="violencia padecida" name="pregunta8" placeholder="Violencia padecida" required>
+        </div>
+    </div><br>
+    <h3>Pregunta 9: Son parte de alguna organización donde promuevan sus derechos</h3>
+    <div class="respuesta">
+        <input type="radio" id="opcion1" name="pregunta9" value="Si">
+        <label for="opcion1">Si</label>
+    </div>
+    <div class="respuesta">
+        <input type="radio" id="opcion2" name="pregunta9" value="No">
+        <label for="opcion2">No</label>
+    </div>
+    <div class="respuesta">
+        <input type="text" id="Cual" name="pregunta9" placeholder="Cual" required>
+    </div>
+    </div><br>
+    <h2>10. REPARACION</h2>
+    <div class="pregunta">
+        <h3>Pregunta 1: El estado le ha informado sobre la verdad de la violación de los DH y DIH cometidos contra el (ella),
+            y/o los miembros de su hogar en relación a los hechos ocurridos con su victimización?</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta1" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta1" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 2: Usted o algún miembro de su familia solicitó al estado indemnización monetaria por la victimización?</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta2" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta2" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 3: El estado le ha brindado las garantías para que no se vuelva a repetir una nueva victimización?</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta3" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta3" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 4: Usted o toda su familia ha recibido rehabilitación después de la victimización por el daño causado?</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta4" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta4" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br>
+    <div class="pregunta">
+        <h3>Pregunta 5: Usted o algún miembro de su hogar ha sido beneficiario de medidas de satisfacción por parte del estado,
+            consistente en la investigación, juzgamiento y sanción de los responsables de la victimización?</h3>
+        <div class="respuesta">
+            <input type="radio" id="opcion1" name="pregunta5" value="Si">
+            <label for="opcion1">Si</label>
+        </div>
+        <div class="respuesta">
+            <input type="radio" id="opcion2" name="pregunta5" value="No">
+            <label for="opcion2">No</label>
+        </div>
+    </div><br><br>
+    <div class="entrevistador">
+        <h4>**Nombres y Apellidos completos del entrevistador**</h4>
+        <div class="respuesta">
+            <input type="text" id="nombres entrevistador" name="nombres_apellidos" placeholder="Nombres entrevistador" required><br/>
+        </div>
+    </div><br>
+        <button onclick="enviarEncuesta()">Enviar Encuesta</button>
+    </div>
+
+
+    <script>
+        function enviarEncuesta() {
+            const respuestas = [];
+            const preguntas = document.querySelectorAll('.pregunta');
+
+            preguntas.forEach(pregunta => {
+                const radio = pregunta.querySelector('input[type="radio"]:checked');
+                if (radio) {
+                    respuestas.push(radio.value);
+                } else {
+                    alert('Por favor, responde todas las preguntas');
+                    return;
+                }
+            });
+
+            if (respuestas.length === preguntas.length) {
+                alert('Encuesta enviada correctamente');
+            }
+        }
+    </script>
+</body>
+</html>

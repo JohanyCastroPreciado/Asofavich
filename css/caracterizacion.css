@@ -1,0 +1,91 @@
+h1{
+    color: #f07167;
+    text-align: center;
+}
+h2{
+    color: rgb(112, 66, 14);
+}
+body{
+   background-color: rgba(176, 226, 226, 0.938); 
+}
+/* Estilo para los contenedores de las columnas */
+.columna {
+    width: 48%; /* Aproximadamente la mitad del ancho total */
+    padding: 1%; /* Espacio alrededor del texto */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho y alto */
+    float: left; /* Posiciona las columnas al lado izquierdo del contenedor principal */
+    text-align: justify; /* Justifica todos los parágrafos, excepto el último */
+    text-align-last: left;
+    font-family: Arial, sans-serif; /* Cambia el tipo de letra */
+    font-size: 18px; /* Cambia el tamaño del texto */
+
+}
+
+/* Estilo para los parrafos dentro de las columnas */
+.columna p {
+    margin: 0; /* Elimina el margen predeterminado alrededor de los parrafos */
+}
+
+/* Estilo para los contenedores principales que contienen las columnas */
+.contenedor {
+    margin: 0 auto; /* Centra los contenedores en la página */
+    overflow: auto; /* Permite desplazarse por los contenedores si el contenido supera su tamaño */
+    padding: 2%; /* Espacio alrededor de los contenedores */
+}
+
+/* Estilo para eliminar el margen entre las dos primeras columnas */
+.contenedor .columna:nth-child(2) {
+    margin-left: 2%; /* Espacio a la izquierda de la segunda columna */
+}
+footer{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+}
+footer #article{
+    background-color: snow;
+    width: 100%;
+    height: 540px;
+    margin: auto;
+}
+footer #article iframe{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: block;
+}
+footer #article ul{
+    width: 480px;
+    height: 30px;
+    margin: 10px auto;
+    
+}
+footer #article ul li{
+    color: black;
+    display: block;
+    float: left;
+    margin: 0 10px;
+}
+footer #article ul li a{
+    color: black;
+    text-decoration: none;
+}
+footer #article ul li img{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+footer article{
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 25px;
+    color: rgb(211, 126, 126);
+    text-align: center;
+    background-color: rgba(235, 235, 235, 0.84);
+}
+footer #article ul li a img{
+    width: 25px;
+    margin: 0 5px;
+    height: 25px;
+}
